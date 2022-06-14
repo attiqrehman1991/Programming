@@ -11,7 +11,6 @@ fun main() {
     val l2 = ListNode(5)
     l2.next = ListNode(6)
     l2.next?.next = ListNode(7)
-
     var l3 = addTwoNumbers(l1, l2)
 
     while (l3!=null) {
