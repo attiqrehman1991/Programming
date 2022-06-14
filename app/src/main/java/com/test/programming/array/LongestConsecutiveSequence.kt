@@ -6,7 +6,7 @@ fun main() {
 }
 
 
-fun longestConsecutiveSequence(nums: IntArray) : Int{
+fun longestConsecutiveSequence(nums: IntArray) : Int {
     if(nums.isEmpty()) return 0
     val setNums = HashSet<Int>()
     for(i in nums)
@@ -22,7 +22,7 @@ fun longestConsecutiveSequence(nums: IntArray) : Int{
                 currentSequenceLength +=1
             }
         }
-        maxConsecutive = Math.max(maxConsecutive, currentSequenceLength)
+        maxConsecutive = maxConsecutive.coerceAtLeast(currentSequenceLength)
     }
     return maxConsecutive
 }

@@ -1,4 +1,4 @@
-package com.test.programming
+package com.test.programming.array
 
 fun main() {
     val prices = intArrayOf(7, 1, 5, 3, 6, 4)
